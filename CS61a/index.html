@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://puckbee.github.io/moli/PA/">
+        <link rel="canonical" href="https://puckbee.github.io/moli/CS61a/">
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../xv6/">
       
       
-        <link rel="next" href="../xv6/">
+        <link rel="next" href="../CS61b/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>南京大学"计算机系统基础"实验(PA) - MOLI：提升实践能力的试炼之地</title>
+        <title>CS61A: 计算机程序的结构与解释 - MOLI：提升实践能力的试炼之地</title>
       
     
     
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              南京大学"计算机系统基础"实验(PA)
+              CS61A: 计算机程序的结构与解释
             
           </span>
         </div>
@@ -239,6 +239,50 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../PA/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    南京大学"计算机系统基础"实验(PA)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../xv6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    MIT6.S081: 操作系统
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -254,7 +298,7 @@
   
   
   <span class="md-ellipsis">
-    南京大学"计算机系统基础"实验(PA)
+    CS61A: 计算机程序的结构与解释
     
   </span>
   
@@ -267,7 +311,7 @@
   
   
   <span class="md-ellipsis">
-    南京大学"计算机系统基础"实验(PA)
+    CS61A: 计算机程序的结构与解释
     
   </span>
   
@@ -317,7 +361,7 @@
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      交流群(志同道合的伙伴 &amp; 解疑答惑的助教)
+      交流群（志同道合的伙伴 &amp; 解疑答惑的助教）
     </span>
   </a>
   
@@ -327,50 +371,6 @@
   
 </nav>
       
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../xv6/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    MIT6.S081: 操作系统
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../CS61a/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    CS61A: 计算机程序的结构与解释
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -473,7 +473,7 @@
         <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      交流群(志同道合的伙伴 &amp; 解疑答惑的助教)
+      交流群（志同道合的伙伴 &amp; 解疑答惑的助教）
     </span>
   </a>
   
@@ -498,43 +498,32 @@
   
 
 
-  <h1>南京大学"计算机系统基础"实验(PA)</h1>
+  <h1>CS61A: 计算机程序的结构与解释</h1>
 
 <h2 id="_1">课程简介<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>你是否曾对程序的运行感到好奇？一行代码如何转化为计算机的动作？操作系统、编译器、硬件之间究竟是如何协同工作的？南京大学的“计算机系统基础”实验（PA）提出x86/mips32/riscv32(64)架构相应的教学版子集, 指导学生实现一个经过简化但功能完备的x86/mips32/riscv32(64)模拟器NEMU(NJU EMUlator), 最终在NEMU上运行游戏"仙剑奇侠传", 来让学生探究"程序在计算机上运行"的基本原理。</p>
-<p>这门课程并非简单的编程实验，它将逐步指导你亲手实现一个计算机系统模拟器（NEMU），并从最简陋的图灵机模型开始，逐步添加CPU、内存、I/O设备，搭建软件运行的基础设施（AM），并在此之上孕育出批处理系统乃至具备虚存管理的分时多任务操作系统（Nanos-lite）。</p>
-<p>通过实现指令译码执行、内存管理、异常响应、系统调用、虚存机制、上下文切换等计算机系统核心机制，你将深入理解软硬件如何协同工作，以及不同抽象层如何构建起复杂的计算机世界。最有意思的是，你将最终在自己亲手构建的系统上，运行包括《仙剑奇侠传》、ONScripter、Flappy Bird在内的一系列有意思的的真实应用程序！</p>
-<p>PA高度重视独立解决问题的能力。你会被引导学习如何高效查阅手册（RTFM）、阅读源代码（RTFSC），利用调试工具，并通过革命性的DiffTest等方法快速定位和解决bug。这过程充满挑战，但正是这些训练，能让你真正掌握计算机系统的运作原理，培养系统级视野和解决复杂问题的能力。</p>
-<p>完成PA，你不仅能彻底消除对计算机系统运作的神秘感，更将打下坚实的系统编程基础，为后续的操作系统、体系结构等课程做好准备，成为一名能应对未来复杂挑战的程序员。  </p>
+<p>CS61A是伯克利本科⽣接触的第⼀⻔编程课程，其历史⾄少可以追溯到1992年。近年来，伯克利每学期都有上千名学⽣选修这⻔课程，⾜以⻅其受欢迎程度和重要性。该课程的核⼼在于引导学⽣通过抽象的思想管理和驾驭程序的复杂性，课程讲解的内容包括：
+* 过程/函数抽象：学习如何将代码组织成可重⽤的函数模块，提⾼代码的可读性和可维护性。
+* 控制抽象：学习使⽤递归、⾼阶函数等思想来控制程序的执⾏流程，编写更简洁、更灵活的代码。
+* 数据抽象：学习如何通过接⼝、对象、类和泛型操作符来构建复杂的程序，隐藏数据实现的细节，提⾼代码的健壮性和可扩展性。
+* 语⾔抽象：了解解释器和宏的概念。
+本课程向学⽣介绍多种编程范式，包括函数式、⾯向对象和声明式，帮助学⽣建⽴多元化的编程思维。此外，课程中包含若⼲有趣的编程项⽬和实验，每个实验和项⽬都配备了详尽的本地测试，可以极⼤的激发学⽣的编程兴趣。你可以使⽤⾃⼰编写的打字游戏和朋友进⾏⼿速PK，也可以实现类似植物⼤战僵⼫(也由伯克利的毕业⽣编写)的塔防游戏。在课程的最后，你甚⾄可以完成⼀个⽤于解释执⾏其他编程语⾔的程序。学习完这⻔课程后，你将对计算机科学的世界产⽣⼀个较为全⾯和系统的认识，并建⽴起未来解决复杂问题的信⼼和能⼒。</p>
 <blockquote>
-<p><strong>关键字</strong>: <code>C语言</code>、<code>计算机系统基础</code>、<code>软硬件协同</code>、<code>操作系统基础</code></p>
+<p>关键字： Python，程序构造，编程语言</p>
 </blockquote>
 <h2 id="_2">学习建议<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<ul>
-<li>
-<p><strong>先修要求</strong>: 扎实的C语言水平 + GNU/Linux入门</p>
-</li>
-<li>
-<p><strong>先修课程推荐</strong>: CS61A,CS61B,CS61C</p>
-</li>
-<li>
-<p><strong>学习方法</strong>: 跟随【PA课程讲义】逐步学习即可，如在学习过程中，感到困难，可以先去学习先修课程。</p>
-</li>
-</ul>
+<p>TODO</p>
 <h2 id="_3">课程资源<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <ul>
-<li>
-<p>课程网站: https://ysyx.oscc.cc/docs/ics-pa/  </p>
-</li>
-<li>
-<p>课程视频: https://www.bilibili.com/video/BV1qa4y1j7xk/  </p>
-</li>
+<li>课程网站：<a href="https://cs61a.org/">https://cs61a.org/</a></li>
+<li>中文字幕：<a href="https://www.bilibili.com/video/BV1sy411z7nA/">https://www.bilibili.com/video/BV1sy411z7nA/</a></li>
 </ul>
-<h2 id="_4">交流群(志同道合的伙伴 &amp; 解疑答惑的助教)<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<p>PA的旅程充满挑战，但也是一次绝佳的成长机会。为了让你更好地攻克难关，我们创建了PA学习交流群。在这里，你可以找到：
-*   <strong>并肩前行的伙伴：</strong> 与和你一样对计算机系统充满热情的同学交流心得、分享经验。
-*   <strong>可靠的支持者：</strong> 负责任的助教将在这里为你提供必要的指导和帮助。</p>
-<p>扫描下方二维码，加入我们，一起在PA中蜕变！</p>
+<h2 id="_4">交流群（志同道合的伙伴 &amp; 解疑答惑的助教）<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>CS61A 的旅程充满挑战，但也是一次绝佳的成长机会。为了让你更好地攻克难关，我们创建了 CS61A 学习交流群。在这里，你可以找到：</p>
+<ul>
+<li><strong>并肩前行的伙伴</strong>：与和你一样对操作系统充满热情的同学交流心得、分享经验</li>
+<li><strong>可靠的支持者</strong>：负责任的助教将在这里为你提供必要的指导和帮助</li>
+</ul>
+<p>扫描下方二维码，加入我们，一起在 CS61A 中蜕变！</p>
 <p>[在此放置二维码]</p>
 
 

@@ -8,10 +8,8 @@
       
       
       
-        <link rel="canonical" href="https://puckbee.github.io/moli/xv6/">
+        <link rel="canonical" href="https://puckbee.github.io/moli/CS61C/">
       
-      
-        <link rel="prev" href="../PA/">
       
       
       
@@ -20,7 +18,7 @@
     
     
       
-        <title>MIT6.S081: 操作系统 - MOLI：提升实践能力的试炼之地</title>
+        <title>CS61C - MOLI：提升实践能力的试炼之地</title>
       
     
     
@@ -96,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              MIT6.S081: 操作系统
+              CS61C
             
           </span>
         </div>
@@ -202,7 +200,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../CS61a/" class="md-tabs__link">
+        <a href="../CS61a.md" class="md-tabs__link">
           
   
   
@@ -218,12 +216,10 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../PA/" class="md-tabs__link">
           
   
@@ -355,7 +351,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../CS61a/" class="md-nav__link">
+      <a href="../CS61a.md" class="md-nav__link">
         
   
   
@@ -378,7 +374,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../CS61b/" class="md-nav__link">
+      <a href="../CS61b.md" class="md-nav__link">
         
   
   
@@ -401,7 +397,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../CS61c/" class="md-nav__link">
+      <a href="../CS61c.md" class="md-nav__link">
         
   
   
@@ -428,31 +424,26 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -465,7 +456,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             进阶阶段
@@ -499,30 +490,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    MIT6.S081: 操作系统
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../xv6.md" class="md-nav__link">
         
   
   
@@ -533,60 +504,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      课程简介
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
-    <span class="md-ellipsis">
-      学习建议
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
-    <span class="md-ellipsis">
-      课程资源
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      交流群（志同道合的伙伴 &amp; 解疑答惑的助教）
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -618,49 +535,54 @@
   
 
 
-  <h1>MIT6.S081: 操作系统</h1>
+  <h1>CS61C</h1>
 
 <h2 id="_1">课程简介<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>MIT6.S081 是 MIT 面向本科生的一门操作系统课程。作为一门极佳的操作系统入门课程，非常适合 <strong>没有接触过操作系统</strong> 、 <strong>对操作系统基本概念理解不深</strong> 或 <strong>已经掌握了基础概念但缺乏实践</strong> 的学生学习。</p>
-<p>课程由 Frans Kaashoek 教授和 Robert Morris 教授进行授课。Frans Kaashoek 教授是 MIT PDOS 组的负责人，Robert Morris 教授是著名的“莫里斯蠕虫”创造者。不同于其他“放 PPT 念 PPT”式的讲课方式，MIT6.S081 由教授手写板书 + 阅读源码的方式进行，带领学生通过源码去理解操作系统的众多机制与实现细节。这种方式不仅可以让学生对知识点的理解更加深刻，还可以提升学生的代码阅读与实践能力，防止空讲理论纸上谈兵。</p>
-<p>由于现代主流操作系统（如：Linux，FreeBSD）的代码量已经十分巨大了，对于初学者来说通过这样的庞然大物学习起来非常困难。为此 MIT 的教授们专门开发了一个教学式的操作系统 xv6。该系统受 UNIX version 6 启发，一共不到 8000 行的 C 代码，实现了进程管理，POSIX 系统调用，内存管理，并发控制，文件系统等诸多核心功能，是一个完整的操作系统。而且源码中拥有非常详尽的注释，非常适合初学者进行学习。</p>
+<p>CS61C是CS61系列课程的最后一环。在前两门课程打下的坚实基础之上，这门课程将带领学生深入探索计算机的底层运作细节。在Dan Garcia教授绘声绘色、充满激情的讲授下，学生将逐步理解：</p>
+<ul>
+<li>
+<p>数据如何在计算机中被存储表示  </p>
+</li>
+<li>
+<p>C语言对应的RISC-V汇编语言表示  </p>
+</li>
+<li>
+<p>RISC-V CPU微架构  </p>
+</li>
+<li>
+<p>各类并行方法  </p>
+</li>
+<li>
+<p>操作系统基础  </p>
+</li>
+</ul>
+<p>这门课程的实验和项目会让你理解和掌握计算机底层的许多知识。Project2会要求你使用RV32IM汇编语言实现神经网络的前向计算过程，用于识别手写数字，十分锻炼一个人对于汇编语言的理解和运用。Project3和对应实验会使用Logisim-evolution这一软件，从基础的逻辑门开始，通过逐步抽象构建出能够执行大部分RV32IM汇编语言的二级流水线CPU。最后一个项目会让你使用SIMD，OpenMP，OpenMPI等并行方法优化矩阵乘法，体验如何加速程序，获得更高的执行效率。</p>
 <blockquote>
-<p><strong>关键字</strong>：<code>C 语言</code>、<code>操作系统</code>、<code>编程实践</code></p>
+<p><strong>关键字</strong>： <code>数字电路</code>、 <code>计算机体系结构</code>、 <code>RISC-V</code></p>
 </blockquote>
 <h2 id="_2">学习建议<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <p>如果不清楚自己是否拥有足够的前置知识，可以先尝试学习，当遇到困难时再进行相关的知识补充。</p>
 <ul>
-<li><strong>先修要求</strong>：熟悉 C 语言编程，RISC-V 计算机体系结构基础</li>
-<li><strong>先修课程推荐</strong>：CS61C</li>
-<li><strong>先修书籍推荐</strong>：《C 程序设计语言》</li>
-<li><strong>学习方法</strong>：建议以课程 lab 为主，如遇困难再通过课程视频或配套书籍进行学习</li>
+<li>
+<p><strong>先修要求</strong>: CS61B，C语言基础    </p>
+</li>
+<li>
+<p><strong>先修书籍推荐</strong>：<a href="https://wizardforcel.gitbooks.io/lcthw/content/">笨方法学C</a>，<a href="https://ysyx.oscc.cc/books/riscv-reader.html">RISC-V开放架构设计之道</a>    </p>
+</li>
 </ul>
 <h2 id="_3">课程资源<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <ul>
-<li>课程网站：<a href="https://pdos.csail.mit.edu/6.S081/2021/index.html">https://pdos.csail.mit.edu/6.S081/2021/index.html</a></li>
-<li>原版视频：<a href="https://www.youtube.com/watch?v=L6YqHxYHa7A">https://www.youtube.com/watch?v=L6YqHxYHa7A</a></li>
-<li>中文字幕：<a href="https://www.bilibili.com/video/BV166421f7D6">https://www.bilibili.com/video/BV166421f7D6/</a></li>
-<li>课程教材：<a href="https://pdos.csail.mit.edu/6.S081/2021/xv6/book-riscv-rev2.pdf">https://pdos.csail.mit.edu/6.S081/2021/xv6/book-riscv-rev2.pdf</a></li>
-<li>中文翻译：<a href="https://github.com/pleasewhy/xv6-book-2020-Chinese">https://github.com/pleasewhy/xv6-book-2020-Chinese</a></li>
+<li>课程网站：<a href="https://cs61c.org/">https://cs61c.org/</a></li>
+<li>中文字幕：<a href="https://www.bilibili.com/video/BV1MCDPYZEUf/">https://www.bilibili.com/video/BV1MCDPYZEUf/</a></li>
 </ul>
 <h2 id="_4">交流群（志同道合的伙伴 &amp; 解疑答惑的助教）<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
-<p>MIT6.S081 的旅程充满挑战，但也是一次绝佳的成长机会。为了让你更好地攻克难关，我们创建了 MIT6.S081 学习交流群。在这里，你可以找到：</p>
+<p>CS61C 的旅程充满挑战，但也是一次绝佳的成长机会。为了让你更好地攻克难关，我们创建了 CS61C 学习交流群。在这里，你可以找到：</p>
 <ul>
 <li><strong>并肩前行的伙伴</strong>：与和你一样对操作系统充满热情的同学交流心得、分享经验</li>
 <li><strong>可靠的支持者</strong>：负责任的助教将在这里为你提供必要的指导和帮助</li>
 </ul>
-<p>扫描下方二维码，加入我们，一起在 MIT6.S081 中蜕变！</p>
-<div style="display: flex; justify-content: flex-start;">
-    <figure>
-        <img src="images/xv6_qq.png" alt="QQ" width="100%">
-        <figcaption>QQ</figcaption>
-    </figure>
-
-    <figure>
-        <img src="images/xv6_weixin.png" alt="微信" width="80%">
-        <figcaption>微信</figcaption>
-    </figure>
-</div>
+<p>扫描下方二维码，加入我们，一起在 CS61C 中蜕变！</p>
+<p>[在此放置二维码]</p>
 
 
 

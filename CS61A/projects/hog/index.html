@@ -3545,6 +3545,14 @@
 
 <center>我懂啦！我要用高阶函数摇出更高的点数。</center>
 
+<div class="admonition info">
+<p class="admonition-title">MOLI：本次作业你将会学到什么</p>
+<ul>
+<li>Python的基础语法与控制结构、高阶函数</li>
+<li>调试与工具使用</li>
+<li>算法思维与数学建模：进行策略与概率实验和策略的优化</li>
+</ul>
+</div>
 <h2 id="_2">简介<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <blockquote>
 <p>按顺序尝试问题，包括每次完成问题后运行 <code>ok</code> 测试，因为后续的一些问题会依赖于早期的实现。</p>
@@ -3894,7 +3902,7 @@
 <p><em>动画由 Tristan &amp; Tyler Roath 创作</em></p>
 <h3 id="_9">打印游戏内的事件<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
 <p>我们为游戏构建了一个模拟器，但是还没有添加任何代码，来描述游戏事件应该怎么对人显示。因此，我们构建了一个无人能玩的电脑游戏。（太无聊了！）</p>
-<p>然而，模拟器是以小型函数的形式来表达的，我们可以用新的函数版本来替换每个函数，这个新版本可以打印出调用时发生的事情的。通过使用这样的高阶函数，我们才能在不改变大部分原始代码的情况下做到这种效果。在 <code>hog_ui.py</code> 有一个例子，我们鼓励你去阅读它。</p>
+<p>然而，模拟器是以小型函数的形式来表达的，于是我们就可以用新的函数版本来替换每个函数，而这个新版本可以打印出调用时发生的事情。通过使用这样的高阶函数，我们才能在不改变大部分原始代码的情况下做到这种效果。在 <code>hog_ui.py</code> 有一个例子，我们鼓励你去阅读它。</p>
 <p><code>play_and_print</code> 函数调用了刚刚实现的相同 <code>play</code> 函数，但是却使用了：</p>
 <ul>
 <li>新的策略函数（例如， <code>printing_strategy(0, always_roll_5)</code> ），用于输出分数和掷骰子的次数。</li>

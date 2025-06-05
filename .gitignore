@@ -1,2 +1,11 @@
-.venv
-mkdocs.yml
+.*
+
+/mkdocs.yml
+/venv
+/site
+
+*~
+\#*#
+
+!.gitignore
+
